@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background: url("/images/pattern-bg.svg") no-repeat right;
+  background-size: 30rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+h3 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+img {
+  width: 100%;
+}
+.quote {
+  max-width: 5rem;
+  margin-bottom: -2rem;
+}
+.img-box {
+  width: 17rem;
+}
+.name {
+  color: hsl(240, 38%, 20%);
+}
+.light-text {
+  font-weight: 300;
+  color: hsl(240, 18%, 77%);
+  font-size: 1.1rem;
+}
+
+.para {
+  color: hsl(240, 38%, 20%);
+}
+.slideshow-container {
+  margin-top: 7rem;
+}
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  gap: 3rem;
+}
+
+.text-box {
+  text-align: center;
+  max-width: 24rem;
+}
+.qoutes {
+  width: 4rem;
+  margin-right: -5rem;
+}
+.Back,
+.forward {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.4s ease;
+  user-select: none;
+  padding: 0.3remrem;
+}
+.slider-control:hover {
+  background: hsl(240, 18%, 77%);
+}
+.slider-control {
+  background: white;
+  width: 4rem;
+  height: 2.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 1.2rem;
+  border: 1px solid transparent;
+  position: absolute;
+  top: 360px;
+  left: 200px;
+}
+.icon-next,
+.icon-prev {
+  max-width: 1.2rem;
+}
+.dots {
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  margin: 0 3px;
+  background-color: hsl(240, 38%, 20%);
+  border-radius: 50%;
+  transition: 0.5s ease;
+}
+
+.dots-section {
+  display: flex;
+  justify-content: center;
+}
+
+/* Faint animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.4s;
+  animation-name: fade;
+  animation-duration: 1.4s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 2;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 2;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .text-box {
+    max-width: 38rem;
+    text-align: left;
+  }
+  .img-box {
+    width: 25rem;
+  }
+  .slider-control {
+    position: absolute;
+    top: 500px;
+    left: 1000px;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
